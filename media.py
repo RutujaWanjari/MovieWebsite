@@ -1,14 +1,11 @@
-# Contains a class Movie with all the required attributes.
-
-import webbrowser
+# Contains a class Movie with all the required attributes.ß
 
 
 class Movie():
 
-    def __init__(self, title, m_description, m_trailer):
-        self.title = title
+    def __init__(self, m_title, m_description, m_poster, m_trailer):
+        self.title = m_title
+        self.poster = m_poster
         self.summary = m_description
         self.trailer = m_trailer
 
-    def show_trailer(self, m_title):
-        webbrowser.open(m_title)
